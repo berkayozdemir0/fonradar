@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
 
- 
+
 
 * {
     color: #0d0f7b;
@@ -39,13 +39,15 @@ form .info-user.info-password {
     position: relative;
     margin-top: 20px;
 }
-form .info-user.info-password img { 
+
+form .info-user.info-password img {
     width: 20px;
     height: 20px;
     position: absolute;
     right: 10px;
-    top: 49%; 
+    top: 49%;
 }
+
 form .user-connect-box button {
     border: 1px solid #0d0f7b;
     border-radius: 5px;
@@ -61,3 +63,72 @@ form .user-connect-box button {
 }
 
 /* login page css finish */
+
+/* link&search start */
+.search-title {
+    margin-top: 50px;
+}
+
+.customer-title {
+    margin-top: 40px;
+}
+
+.second-container {
+    padding: 0 10%;
+}
+
+.search-box {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: 40px 0 10px 0;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #858585;
+}
+
+.search-box input::placeholder {
+    font-size: 13px;
+    color: #858585;
+}
+
+.magnifying {
+    position: absolute;
+    right: 10px;
+    top: 49%;
+    width: 15px;
+    height: 15px;
+    transform: translateY(-50%);
+}
+
+.second-container table,
+tr,
+td {
+    border: 1px solid #000;
+}
+.second-container table {
+     max-width: 600px;
+     width: 100%;
+}
+
+.second-container td {
+    width: 25%;
+    padding: 3px 10px;
+    font-size: 14px;
+}
+
+/* link&search finish */
+
+
+.err {
+    background: #ffe6ee;
+    border: 1px solid #b1395f;
+}
+
+.emsg {
+    color: #c12020;
+    font-size: 11px;
+}
