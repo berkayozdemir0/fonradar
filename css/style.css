@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+ 
+
+* {
+    color: #0d0f7b;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* login page css start */
+.logo-box-login {
+    max-width: 100%;
+    text-align: right;
+}
+
+h1.login-title {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.user-connect-box {
+    max-width: 310px;
+    margin: auto;
+}
+
+.user-connect-box input {
+    border-radius: 5px;
+    width: 100%;
+    padding: 7px;
+}
+
+form .info-user p {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+form .info-user.info-password {
+    position: relative;
+    margin-top: 20px;
+}
+form .info-user.info-password img { 
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 49%; 
+}
+form .user-connect-box button {
+    border: 1px solid #0d0f7b;
+    border-radius: 5px;
+    font-size: 15px;
+    background: #0d0f7b;
+    color: #fff;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    padding: 7px;
+}
+
+/* login page css finish */
