@@ -109,15 +109,21 @@ tr,
 td {
     border: 1px solid #000;
 }
+
 .second-container table {
-     max-width: 600px;
-     width: 100%;
+    max-width: 600px;
+    width: 100%;
 }
 
 .second-container td {
     width: 25%;
     padding: 3px 10px;
     font-size: 14px;
+}
+
+.dowland-icon {
+    width: 15px;
+    height: 15px;
 }
 
 /* link&search finish */
