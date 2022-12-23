@@ -7,14 +7,14 @@ fetch("https://6215eeb77428a1d2a354c664.mockapi.io/api/v1/customers").then((resp
     objectData.map((values) => {
         tableData += `    
       
-        <tbody> 
+        <table id="myTable"> 
         <tr>
-        <td>${values.companyName} </td>
-        <td>${values.taxNumber} </td>
-        <td>${values.taxOffice} </td>
-        <td>${values.invoiceCount} </td>
+        <td> <a href="#"> ${values.companyName} </a> </td>
+        <td> <a href="#"> ${values.taxNumber} </a> </td>
+        <td> <a href="#"> ${values.taxOffice} </a> </td>
+        <td> <a href="#"> ${values.invoiceCount} </a> </td>
         </tr>
-        </tbody> 
+        </table> 
         `;
     });
     document.getElementById("table_body").
@@ -22,3 +22,27 @@ fetch("https://6215eeb77428a1d2a354c664.mockapi.io/api/v1/customers").then((resp
 }).catch((err) => {
     console.log(err);
 })
+
+
+// search area start
+function myFunction() {
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("myTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+// search area finish
+
+
