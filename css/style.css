@@ -138,3 +138,44 @@ td {
     color: #c12020;
     font-size: 11px;
 }
+
+footer {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 100px;
+    width: 100%;
+}
+
+footer .footer-text {
+    color: red;
+}
+
+footer .information-box a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 10px;
+    color: #0d0f7b;
+}
+
+footer .information-box a:first-child {
+    padding-left: 0;
+}
+
+footer .information-box a:last-child {
+    padding-right: 0;
+}
+
+footer .information-box a img {
+    max-height: 17px;
+    filter: invert(12%) sepia(36%) saturate(4724%) hue-rotate(217deg) brightness(107%) contrast(105%);
+}
+
+@media only screen and (max-width: 991px) {
+
+    .information-box {
+        display: flex;
+        flex-direction: column;
+    }
+}
