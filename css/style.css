@@ -146,6 +146,7 @@ footer {
     transform: translateX(-50%);
     padding-top: 100px;
     width: 100%;
+
 }
 
 footer .footer-text {
@@ -170,6 +171,32 @@ footer .information-box a:last-child {
 footer .information-box a img {
     max-height: 17px;
     filter: invert(12%) sepia(36%) saturate(4724%) hue-rotate(217deg) brightness(107%) contrast(105%);
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+html,
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    min-height: 2.5rem;
+}
+
+.container {
+    min-height: 100%;
+}
+
+#site {
+    min-height: 100vh;
+    position: relative;
 }
 
 @media only screen and (max-width: 991px) {

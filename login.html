@@ -11,32 +11,33 @@
 <link rel="stylesheet" href="css/style.css">
 
 <body>
-    <div class="container">
-        <div class="logo-box-login">
-            <img src="images/logo-1.png" alt="">
-        </div>
-        <h1 class="login-title">Login</h1>
-        <form method="POST" id="myForm" onsubmit="return check()" novalidate>
-            <div class="user-connect-box">
-                <h2>Kullanıcı Girişi</h2>
-                <div class="info-user">
-                    <p>E posta adresi</p>
-                    <input type="email" name="fname" id="fname" required minlength="2" maxlength="35">
-                    <div id="cname" class="emsg"></div>
-                </div>
-                <div class="info-user info-password">
-                    <p>Şifreiniz</p>
-
-                    <input type="password" name="fpassword" id="fpassword" required min="1" max="12">
-                    <div id="cnumber" class="emsg"></div>
-
-                    <img src="images/eye-hidden.png" id="togglePassword">
-                </div>
-                <button type="submit" value="Go!">Giriş Yap</button>
+    <div id="site">
+        <div class="container pb-90">
+            <div class="logo-box-login">
+                <img src="images/logo-1.png" alt="">
             </div>
-        </form>
+            <h1 class="login-title">Login</h1>
+            <form method="POST" id="myForm" onsubmit="return check()" novalidate>
+                <div class="user-connect-box">
+                    <h2>Kullanıcı Girişi</h2>
+                    <div class="info-user">
+                        <p>E posta adresi</p>
+                        <input type="email" name="fname" id="fname" required minlength="2" maxlength="35">
+                        <div id="cname" class="emsg"></div>
+                    </div>
+                    <div class="info-user info-password">
+                        <p>Şifreiniz</p>
 
-        <!-- <form method="POST" class="login-form" id="myForm">
+                        <input type="password" name="fpassword" id="fpassword" required min="1" max="12">
+                        <div id="cnumber" class="emsg"></div>
+
+                        <img src="images/eye-hidden.png" id="togglePassword">
+                    </div>
+                    <button type="submit" value="Go!">Giriş Yap</button>
+                </div>
+            </form>
+
+            <!-- <form method="POST" class="login-form" id="myForm">
             <h1 class="login-heading">LOGIN FORM</h1>
             <input type="text" placeholder="User Name" id="login-username">
             <br><br>
@@ -44,7 +45,7 @@
             <br><br><br>
             <input type="submit" value="Login" id="login-submit">
         </form> -->
-    </div>
+        </div>
 </body>
 
 <footer class="text-center">
@@ -65,6 +66,7 @@
         </div>
     </div>
 </footer>
+</div>
 <!-- JavaScript Bundle with Popper -->
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.6.2.min.js"></script>
